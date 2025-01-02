@@ -1,0 +1,30 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#container > div{
+    background-color: black;
+    min-height: 100px;
+    min-width: 100px;
+    transition: .2s;
+}
+
+#container > div:hover{
+    transform: scale(1.1);
+}
+#container{
+    background-color: white;
+    min-width: 500px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
